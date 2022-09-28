@@ -1,0 +1,77 @@
+CREATE TABLE `authors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `author_name` varchar(255) NOT NULL,
+  `author_designation` varchar(255) NOT NULL,
+  `author_description` varchar(1000) NOT NULL,
+  `author_image` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `title` varchar(2000) NOT NULL,
+  `author` varchar(1000) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `slug_url` varchar(2000) NOT NULL,
+  `category` varchar(250) NOT NULL,
+  `topic` varchar(1000) NOT NULL,
+  `seo_description` varchar(2000) NOT NULL,
+  `seo_keywords` varchar(2000) NOT NULL,
+  `loginid` varchar(500) NOT NULL,
+  `updated_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `uploaded_on` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `status` varchar(100) NOT NULL,
+  `otp` int(11) NOT NULL,
+  `role` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `title` varchar(2000) NOT NULL,
+  `author` varchar(1000) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `slug_url` varchar(2000) NOT NULL,
+  `category` varchar(250) NOT NULL,
+  `topic` varchar(100) NOT NULL,
+  `date` varchar(100) NOT NULL,
+  `time` varchar(100) NOT NULL,
+  `meetingid` varchar(100) NOT NULL,
+  `meetingpassword` varchar(100) NOT NULL,
+  `zoomlink` varchar(500) NOT NULL,
+  `facebooklink` varchar(500) NOT NULL,
+  `youtubelink` varchar(500) NOT NULL,
+  `seo_description` varchar(2000) NOT NULL,
+  `seo_keywords` varchar(2000) NOT NULL,
+  `loginid` varchar(500) NOT NULL,
+  `updated_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `uploaded_on` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `email` varchar(100) NOT NULL,
+  `message` text NOT NULL,
+  `uploaded_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `joinwithus` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(500) NOT NULL,
+  `profession` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `uploaded_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
