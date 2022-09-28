@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  'Playfair Display SC', serif;
+}
+.container{
+    width: 100%;
+    height:fit-content;
+}
+.nav{
+    width:100%;
+    height: 70px;
+    display: flex;
+    flex-wrap:wrap;
+    padding:20px;
+    justify-content:space-between;
+    background: #008CCB; ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color:#fff;
+}
+.nav .title {
+    width: 70%;
+    margin-left:6%;
+    font-size:25px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+.nav .logoutBtn{
+    width:10%;
+    text-align:center;
+    padding:7px;
+    margin-right:5%;
+    border-radius:10px;
+    height:40px;
+    font-family: Noto Sans,sans-serif;
+    font-weight: 400;
+   
+}
+.nav a{
+    text-decoration: none;
+    color:#fff;
+}
+.nav .logoutBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: red; 
+    transition: .5s ease-in;
+}
+.item-container{
+    background: #fff;
+    width:40%;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin:50px auto;
+  }
+  .item-container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .item-container .close-btn:hover{
+    color: #3498db;
+  }
+  .item-container .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .item-container form{
+    margin-top: -20px;
+  }
+  .item-container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+  }
+  form .data label{
+    font-size: 18px;
+    font-family: Noto Sans,sans-serif;
+  }
+  form .data input{
+    font-family: Noto Sans,sans-serif;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+  }
+  form .data select{
+    font-family: Noto Sans,sans-serif;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+  }
+  form .data select option{
+    font-family: Noto Sans,sans-serif;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+  }
+
+  form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+  form .forgot-pass{
+    margin-top: -8px;
+  }
+  form .forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .forgot-pass a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  form .btn:hover .inner{
+    left: 0;
+  }
+  form .btn input{
+    height: 100%;
+    width: 100%;
+    background:  #3498db;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  form .signup-link{
+    text-align: center;
+  }
+  form .signup-link a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+@media screen and (max-width: 992px){
+    .nav{
+        height:85px;
+        padding:15px;
+        justify-content: space-between;
+    }
+    .nav .title {
+        width:100%;
+        margin:0;
+        font-size:18px;
+        font-weight: 600;
+        cursor: pointer;
+        margin:auto;
+        text-align: center;
+    }
+    .nav .logoutBtn{
+        width:35%;
+        text-align:center;
+        padding:4px;
+        margin-left: 70%;
+        border-radius:10px;
+        height:30px;
+        font-family: Noto Sans,sans-serif;
+        font-weight: 400;
+        margin-top:10px;
+        font-size: 13px;
+    }
+    .nav a{
+        text-decoration: none;
+        color:#fff;
+    }
+    .nav .logoutBtn:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background: red; 
+        transition: .5s ease-in-out;
+    }
+    .item-container{
+        width:100%;
+    }
+}
+.item-container1{
+  width:100%;
+  text-align:center;
+  font-family: Noto Sans,sans-serif;
+  margin-top:20px;
+}

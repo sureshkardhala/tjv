@@ -1,0 +1,138 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.thisNav{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  /* background: #1b1b1b; */
+  background: #008CCB;
+  /* background: #1B9BFF; */
+  /* background: #0082e6; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0 80px;
+  flex-wrap: wrap;
+  /* border: none; */
+}
+.thisNav .logo{
+  color: #fff;
+  font-size: 25px;
+  /* font-size: 35px; */
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+
+}
+.thisNav .logo h4 button{
+  font-family: 'Poppins', sans-serif;
+}
+.thisNav p{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.thisNav p{
+  margin: 0 5px;
+}
+.thisNav p a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height:30px;
+  width:90px;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  margin: 0px 10px;
+ 
+  font-family: 'Poppins', sans-serif;
+  border:1px solid white;
+  text-align:center;
+
+
+}
+
+/* .thisNav p li a.active,
+.thisNav p li a:hover{
+  color: #111;
+  background: #fff;
+} */
+.thisNav .menu-btn i{
+  color: #fff;
+  font-size: 23px;
+  /* font-size: 22px; */
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  .thisNav{
+    padding: 0 20px 0 20px;
+    /* padding: 0 40px 0 50px; */
+  }
+}
+@media (max-width: 920px) {
+  .thisNav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .thisNav p{
+    position: fixed;
+    top: 20px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    /* transition: all 0.3s ease; */
+    transition: all 0.8s ease;
+
+  }
+  #click:checked ~ p{
+    left: 0;
+  }
+  .thisNav p{
+    width: 100%;
+    margin: 40px 0;
+  }
+  .thisNav p a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: none;
+    margin-top: 20px;
+    padding: 10px;
+    height:fit-content;
+  }
+  #click:checked ~ p a{
+    margin-left: 0px;
+  }
+  /* .thisNav p li a.active,
+  .thisNav p li a:hover{
+    background: none;
+    color: cyan;
+  } */
+}
+
+.theMainButton{
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

@@ -1,0 +1,228 @@
+.post-item-container{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    margin:50px auto;
+    justify-content:space-between;
+    background:white;
+}
+.post-item-noresult{
+    text-align: center;
+    margin:50px auto;
+}
+.post-item-noresult .nores{
+    padding:5px;
+    color:#0079F5;
+}
+.post-items{
+    width:45%;
+    height:fit-content;
+    display: flex;
+    flex-wrap:wrap;
+    margin:50px 20px 0;  
+    justify-content:space-around;
+    padding:10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.headtitle{
+    text-align:center;
+    cursor: pointer;
+    margin-top:50px;
+    font-size:16px;
+}
+.post-image-container{
+    width:45%;
+    height:fit-content;
+    font: contain;
+}
+.post-image-container img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.post-details{
+    width:50%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 5px;
+}
+.post-details .posttitle{
+    width:100%;
+}
+.post-details .posttitle span{
+    font-family: Noto Sans,sans-serif;
+    font-size:12px;
+    font-weight:400;
+}
+.post-details .description{
+    width:100%;
+    height:fit-content;
+    font-family: Noto Sans,sans-serif;
+    font-weight:400;
+    margin:5px 0;
+}
+.text{
+    font-size:10px;
+    margin:5px 5px;
+}
+p{
+    font-family: Noto Sans,sans-serif;
+}
+.post-details .description p{
+    font-family: Noto Sans,sans-serif;
+    font-size: 14px;
+}
+.post-details .buttons-list{
+    width:100%;
+    height:fit-content;
+    margin:10px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:0 20px 0 20px;
+}
+.post-details .buttons-list .btn{
+    width:100px;
+    height:40px;
+    border:1px solid #eee;
+    border-radius:15px;
+    text-align:center;
+    padding:5px;
+    cursor: pointer;
+}
+.post-details .buttons-list .btn a{
+    text-decoration:none;
+    font-family: Noto Sans,sans-serif;
+    color:#eee;
+    text-transform:uppercase;
+    font-size:13px;
+}
+.post-details .buttons-list .btn a i{
+    font-size:13px;
+}
+.post-details .buttons-list .edit{
+    background: #5CB6D6;
+}
+.post-details .buttons-list .delete{
+    background:#EB220C;
+}
+.time{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text{
+    width:40%;
+    font-size:10px;
+}
+.post-details .posttp{
+    width:100%;
+    font-size:14px;
+    margin-top:10px;
+}
+.post-details .posttp span{
+    font-family: Noto Sans,sans-serif;
+    font-size:12px;
+    font-weight:400;
+}
+.tplistou{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    margin:15px;
+    justify-content: space-around;
+    padding:5px;
+    padding:0 20px 0 20px;
+}
+.tplistou a{
+    width:30%;
+    text-decoration: none;
+    color:#009CCA;
+}
+.buttons-list1{
+    width:100%;
+    height:fit-content;
+    margin:10px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:0 20px 0 20px;
+}
+.buttons-list1 .btn{
+    width:30%;
+    height:40px;
+    border:1px solid #eee;
+    border-radius:15px;
+    text-align:center;
+    padding:5px;
+    cursor: pointer;
+}
+.buttons-list1 .btn a{
+    text-decoration:none;
+    font-family: Noto Sans,sans-serif;
+    color:#eee;
+    text-transform:uppercase;
+    font-size:13px;
+}
+ .buttons-list1 .btn a i{
+    font-size:13px;
+}
+ .buttons-list1 .edit{
+    background: #5CB6D6;
+}
+ .buttons-list1 .delete{
+    background:#EB220C;
+}
+.buttons-list1 .view{
+    background: #6965B2;
+}
+@media screen and (max-width: 992px){
+    .post-item-container{
+    width:100%;
+    margin:0;
+}
+.post-items{
+    width:100%;
+    margin:25px 0;
+}
+.headtitle{
+    text-align:center;
+    cursor: pointer;
+    margin-top:0px;
+}
+.post-image-container{
+    width:50%;
+    justify-content:center;
+}
+.post-details{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 5px;
+}
+.post-details .posttitle{
+    width:100%;
+    margin:5px 0;
+}
+.buttons-list1{
+    width:100%;
+    padding:0;
+    margin:10px 0;
+}
+.tplistou{
+    margin:10px auto;
+}
+.tplistou a{
+   font-size:13px;
+   font-family: Noto Sans,sans-serif;
+   width:33%;
+}
+.tplist{
+    width:100%;
+}
+}

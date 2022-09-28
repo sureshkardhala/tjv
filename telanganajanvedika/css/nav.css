@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav-section{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    font-family: 'Roboto Slab', serif;
+    margin:0;
+}
+
+.logo{
+    width:18%;
+    justify-content:right;
+    margin:auto;
+}
+.logo img{
+    max-width:100px;
+    max-height:100%;
+    object-fit:contain;
+    margin:auto;
+    justify-self: right;
+    margin-left:50%;
+}
+.short-info{
+    width:82%;
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.caption{
+    width:100%;
+    height:50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border-bottom:0.1px solid #D4D3D5 ;
+    padding:12px 0;
+}
+.caption .motto{
+    width:40%;
+    height:100%;
+}
+.caption .motto h2{
+    font-size:18px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing:2px;
+    color:#4D5EB2;
+   
+}
+.caption .search-box{
+    width:40%;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0;
+}
+.caption .search-box .search-form{
+    width:100%;
+}
+.caption .search-box a{
+    width:10%;
+    font-size:20px;
+    text-align:center;
+    cursor: pointer;
+}    
+.caption .search-box .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width:90%;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+    border-bottom:0.5px solid #E2C6DA;
+}
+.caption .search-box .btn .fas {
+    color:black;
+}
+.caption .empty{
+    width:20%;
+    visibility: hidden;
+}
+.nav-bar{
+    width:100%;
+    height:50px;
+    padding:0;
+    overflow: hidden;
+}
+.nav-bar .menu{
+    display:none;
+}
+.nav-bar .nav-items{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.nav-bar .nav-items label{
+    width:20%;
+    height:100%;
+    border-right:0.1px solid #D4D3D5 ;
+    text-align:left;
+    padding:15px 0 15px 15px ;
+    text-transform:uppercase;
+    font-size:12.5px;
+    font-weight:900;
+    letter-spacing:2px;
+    word-spacing:2px;
+    font-family: Noto Sans,sans-serif;
+    font-weight:bolder;
+    cursor: pointer;
+}
+.nav-bar .nav-items label i{
+   font-weight:900;
+   color:rgb(0, 0, 0, .3);
+   font-size:15px;
+   text-align:right;
+   width:10%;
+}
+
+.nav-bar .nav-items label input{
+   display:none;
+}
+.nav-bar .nav-items label:hover{
+    color:#4A96E4;
+    transition: color .5s ease;
+}
+
+.content1, .content2, .content3, .content4, .content5{
+    width:100%;
+    height:fit-content;
+    padding:10px;
+    display:none;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(../who-we-are.jpg);
+    
+}
+.box{
+    width:80%;
+    height:300px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    letter-spacing:0.5px;
+    margin:20px auto;
+    color:#EEE;
+    font-family: 'Roboto Slab', serif;
+
+} 
+.box a{
+    color:#EEE;
+}
+
+.left-box{
+    width:35%;
+    margin:auto;
+    padding:5px 0;
+    padding-right:30px;
+}
+.right-box{
+    width:60%;
+    margin:auto ;
+    display:flex;
+    flex-wrap:wrap;
+    border-left:1px solid #EEE;
+}
+.title{
+    margin:20px 0;
+    font-weight:500;
+    font-size:20px;
+    word-spacing:5px;
+
+}
+.describe{
+    margin:10px 0;
+    letter-spacing:1px;
+}
+li{
+    list-style: none;
+    margin:2px 0 20px 50px;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing: 3px;
+    font-weight:600;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: Noto Sans,sans-serif;
+}
+a{
+    text-decoration:none;
+}
+li a:hover{
+    color:#4A96E4;
+    transition: color .5s ease;
+}
+.mobile-section{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+.nav-section{
+    display: none;
+}
+.mobile-section{
+    display: flex;
+    flex-wrap:wrap;
+    border:2px solid red;
+    width:100%;
+    height:fit-content;
+    justify-content: space-around;
+}
+.mobile-menubar{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:5px;
+}
+.mobile-logo{
+    width:20%;
+    height:70px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.mobile-logo img{
+    width:65px;
+    height:65px;
+    object-fit: contain;
+    border:2px solid black;
+}
+.logo-title{
+    font-weight:900;
+    font-family: 'Poppins', sans-serif;
+    width:65%;
+    border:2px solid red;
+    text-align: center;
+    padding:5% 0 5% 0;
+}
+.icon{
+    width:10%;
+    border: 2px solid black;
+    text-align: center;
+    padding:5% 0 5% 0;
+   font-size: 20px;
+}
+input[type=checkbox] {
+    display: none;
+}
+.mobile-navbar{
+    display: none;
+    border:2px solid blue;
+    margin:10px 0;
+    padding:5px;
+    width:100%;
+}
+.mobile-navbar label{
+    width:100%;
+    height:50px;
+    border:2px solid grey;
+    margin:5px 0;
+    text-align:center;
+    padding:15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.mobile-navbar label .s1{
+    width:90%;
+    text-align: left;
+    text-transform:uppercase;
+    font-size:12.5px;
+    letter-spacing:2px;
+    word-spacing:2px;
+    font-family: Noto Sans,sans-serif;
+    font-weight:bolder;
+    cursor: pointer;
+    font-weight:900;
+}
+.mobile-navbar label i{
+    font-weight:900;
+    color:rgb(0, 0, 0, .3);
+    font-size:12px;
+    text-align:right;
+    width:10%;
+}
+.content6, .content7, .content8, .content9, .content10{
+    width:100%;
+    height:fit-content;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(../who-we-are.jpg);
+    margin:10px 0;
+    display:none;
+}
+.mobile-box{
+    width:90%;
+    margin:auto;
+    border:2px solid white;
+    height:350px;
+    margin:7px auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.mobile-items{
+    width:100%;
+    height:50px;
+    color:white;
+    padding:13px;
+    border:2px solid blue;   
+    color:#EEE;
+}
+.mobile-items a{
+    text-decoration: none;
+    color:#EEE;
+    letter-spacing:1px;
+    font-family: Noto Sans,sans-serif;
+    font-weight:500;
+    font-size:14px;
+}
+.mobile-items h3{
+    font-weight:600;
+    font-size:20px;
+    word-spacing:5px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing:0.5px;
+}
+}

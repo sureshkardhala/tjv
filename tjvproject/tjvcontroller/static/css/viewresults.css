@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  'Playfair Display SC', serif;
+}
+.container{
+    width: 100%;
+    height:fit-content;
+}
+.item-container{
+    width:100%;
+    height:fit-content;
+    margin:30px 0;
+    padding:20px;
+    overflow: hidden;
+}

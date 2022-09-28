@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  'Playfair Display SC', serif;
+}
+.container{
+    width: 100%;
+    height:fit-content;
+}
+.item-conatiner{
+    width: 100%;
+    height:fit-content;
+}
+.items-container{
+    width:100%;
+    height:fit-content;
+    margin:50px 0;
+    text-align: center;
+}
+.itemlist{
+    width:60%;
+    height:fit-content;
+    display: flex;
+    flex-wrap:wrap;
+    margin:10px auto;
+    justify-content: space-between;
+    padding:20px;
+}
+.item{
+    width:45%;
+    height:50px;
+    border:1px solid red;
+    padding:10px;
+    text-align:center;
+    border-radius:15px;
+    cursor: pointer;
+}
+.item a{
+    text-decoration: none;
+}
+.item-title{
+    cursor: pointer;
+}
+.top{
+    margin:50px 0;
+}
+@media screen and (max-width: 992px){
+    .item-conatiner{
+        width: 100%;
+        height:fit-content;
+    }
+    .items-container{
+        width:100%;
+        height:fit-content;
+        margin:100px 0;
+        text-align: center;
+    }
+    .itemlist{
+        width:100%;
+        height:fit-content;
+        display: flex;
+        flex-wrap:wrap;
+        margin:10px auto;
+        justify-content: space-between;
+        padding:20px;
+    }
+    .item{
+        width:100%;
+        height:50px;
+        border:1px solid red;
+        padding:10px;
+        text-align:center;
+        border-radius:15px;
+        cursor: pointer;
+        margin:15px 0;
+    }
+}
+.popbox{
+    width:50%;
+    height:fit-content;
+    margin:15px auto;
+    padding:10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+.popbox .title{
+    margin:10px 0;
+}
+.popbox p{
+    text-align:right;
+    font-family: Noto Sans,sans-serif;
+    margin:10px 0;
+}
+.popbox form{
+    width:100%;
+    padding:10px 10px 0 10px;
+}
+.popbox textarea{
+    width:100%;
+    height:fit-content;
+    margin:10px 0;
+    padding:5px;
+    font-family: Noto Sans,sans-serif;
+}
+.popbox .buttons{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.popbox .buttons .btn{
+    width:60%;
+    height:40px;
+    text-align:center;
+    font-family: Noto Sans,sans-serif;
+    margin-left: 30px;
+    border-radius:15px;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+.submit{
+    background:#00C9A7;
+}
+@media screen and (max-width: 992px){
+.popbox{
+    width:100%;
+    height:fit-content;
+    margin:5px auto;
+    padding:15px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.popbox .title{
+    margin:0;
+}
+.popbox p{
+    margin:10px;
+}
+.popbox .buttons{
+    width:100%;
+    margin:5px;
+    padding:5px;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0;
+}
+.popbox .buttons .btn{
+    width:80%;
+    height:40px;
+    text-align:center;
+    font-family: Noto Sans,sans-serif;
+    border-radius:15px;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+}

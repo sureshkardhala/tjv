@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    width:100%;
+    height:fit-content;
+    overflow:hidden;
+}
+.blog{
+    width:80%;
+    margin:auto;
+}
+@media screen and (max-width: 992px){
+    .blog{
+        width:100%;
+    }
+}
